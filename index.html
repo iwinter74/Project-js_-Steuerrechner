@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section id="hero">
+        <h1>STEUERBERECHNUNG FÜR EINKOMMENSTEUERPFLICHTIGE FÜR DIE JAHRE 2018 BIS 2020</h1>
+        <div>
+            <label for="">zu versteuerndes Einkommen (zvE):</label>
+            <input type="text" name="" id="zvE">
+            <span>Euro</span>
+        </div>
+        <div id="radio">
+            <label for="">Persönliche Verhältnisse:</label>
+            <div id="align">
+                <div>
+                    <input type="radio" name="married" id="verheiratet" value="verheiratet/ verpartnert">
+                    <label for="">verheiratet/ verpartnert</label>
+                </div>
+                <div>
+                    <input type="radio" name="married" id="alleinstehend" value="alleinstehend" checked>
+                    <label for="">alleinstehend</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="">Berechnungsjahr:</label>
+            <select name="" id="year">
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+        </div>
+        <input type="button" value="Berechnen" onclick="myTax()">
+        <input type="button" value="Zurücksetzen" onclick="myReset()">
+        <h1>Einkommensteuer: <span id="tax"></span></h1>
+        <h1 id="error"></h1>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
